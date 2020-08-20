@@ -1,0 +1,42 @@
+<FirstScreen>:
+   
+    GridLayout:
+        background_color:[0,0,1,1]
+        padding:20,20
+        cols:1
+        GridLayout:
+            spacing:20,20
+            cols:1
+            Label:
+                text:"Rupesh Dictionary"
+            TextInput:
+                id:word
+                text:""
+                hint_text:"Enter word"
+            Button:
+                text:"Search"
+                on_press:root.search(root.ids.word.text)
+            Label:
+                id:show
+                text:""
+                text_size:self.width,None
+                size_hint_y: None
+                height: self.texture_size[1]
+
+        GridLayout:
+            padding:10,10
+            cols:1  
+
+            ScrollView:
+                Label:
+                    id:result1
+                    text:""
+                    text_size:self.width,None
+                    size_hint_y: None
+                    height: self.texture_size[1]
+
+<RootWidget>:
+    FirstScreen:
+        name: "first_screen"
+    
+   
