@@ -1,1 +1,2 @@
 # dictionatoryMobileApp
+![](Screenshot.png)
